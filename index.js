@@ -26,7 +26,7 @@ try {
 
     user: function (userId, obj) {
       try {
-        this.settings.userId = userId; // important, to be used for events
+        this.settings.userId = userId; // important, to be used for company and events
         fetch(this.settings.dispatchUrl + "/user", {
           method: "POST",
           mode: "cors",
@@ -35,7 +35,7 @@ try {
           },
           body: JSON.stringify({
             userId: userId,
-            ...obj,
+            attributes: obj,
           }),
         });
       } catch (err) {
@@ -53,7 +53,8 @@ try {
           },
           body: JSON.stringify({
             companyId: companyId,
-            ...obj,
+            userId: this.settings.userId,
+            attributes: obj,
           }),
         });
       } catch (err) {
@@ -66,7 +67,7 @@ try {
         this.events.push({
           event: event,
           userId: this.settings.userId,
-          ...obj,
+          attributes: obj,
         });
       } catch (err) {
         this.error(err);
