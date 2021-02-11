@@ -5,7 +5,7 @@ Bucket JS agent to interact with the [Bucket HTTP Tracking API](https://bucket.s
 
 Include the script
 
-`<script src="bucket.js"></script>`
+`<script src="https://cdn.jsdelivr.net/gh/bucketdotso/bucket-js@v.0.1-alpha/index.js"></script>`
 
 Initialize the agent
 
