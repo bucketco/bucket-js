@@ -13,7 +13,7 @@ try {
         obj.dispatchHost || "https://ingest.bucket.so";
       this.settings.dispatchUrl =
         this.settings.dispatchHost + "/" + this.settings.appId;
-      this.settings.dispatchInterval = obj.dispatchUrl || 10000;
+      this.settings.dispatchInterval = obj.dispatchInterval || 100;
       this.settings.debug = obj.debug || false;
 
       // start dispatcher
