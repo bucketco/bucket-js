@@ -1,6 +1,8 @@
 ## Bucket.js
 Bucket JS agent to interact with the [Bucket HTTP Tracking API](https://bucket.so/docs/bucket-api)
 
+The agent _does not_ collect any additional metadata about your users - only what you explicitly send is stored.
+
 ### Quick start
 
 Include the script
