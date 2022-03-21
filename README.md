@@ -1,4 +1,11 @@
+# Archived
+
+This project has been superseded by [the bucket tracking SDK](https://github.com/bucketco/bucket-tracking-sdk).
+
+---
+
 ## Bucket.js
+
 Bucket JS agent to interact with the [Bucket HTTP Tracking API](https://bucket.so/docs/bucket-api)
 
 ### Quick start
@@ -19,7 +26,7 @@ Identify the user
 
 ```javascript
 window.bucket.user("<user id>", {
- custom: "attribute",
+  custom: "attribute",
 });
 ```
 
@@ -27,7 +34,7 @@ Identify the company. The user will be associated with it
 
 ```javascript
 window.bucket.company("<company id>", {
- monthly_spend: 99,
+  monthly_spend: 99,
 });
 ```
 
